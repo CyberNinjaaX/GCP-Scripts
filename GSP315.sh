@@ -10,13 +10,13 @@ echo "🚀 Starting GSP315 Challenge Lab setup..."
 # Variables (change if lab gives specific REGION/ZONE)
 REGION="us-central1"
 ZONE="us-central1-a"
-BUCKET_NAME="qwiklabs-gcp-03-5b8c1bb4e237-bucket"
-TOPIC_NAME="topic-memories-279"
-FUNCTION_NAME="memories-thumbnail-creator"
+BUCKET_NAME="Bucket Name"
+TOPIC_NAME="Topic Name"
+FUNCTION_NAME="Cloud Run Function Name"
 
 # Task 1: Create a bucket
 echo "📦 Creating storage bucket: $BUCKET_NAME"
-gcloud storage buckets create $BUCKET_NAME --location=$REGION
+gcloud storage buckets create gs://$BUCKET_NAME --location=$REGION
 
 # Task 2: Create a Pub/Sub topic
 echo "🔔 Creating Pub/Sub topic: $TOPIC_NAME"
